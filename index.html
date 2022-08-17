@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <header class="titulo">
+        <h1>CALCULADORA DE INDICE DE MASSA CORPORAL</h1>
+    </header>
+    <nav class="navegacao">
+        <ul>
+            <li> <a href="#sobre">Introdução</a></li>
+            <li><a href="#calculadora">Calculadora</a></li>
+            <li><a href="#recomendacoes">Recomendações</a></li>
+        </ul>
+    </nav>
+
+    <div class="entrada">
+        <form class="formulario">
+            <h2 id="calculadora">Calculadora de IMC</h2>
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            <input type="number" name="peso" id="peso" placeholder="Digite o seu peso em quilos">
+            <input type="number" name="altura" id="altura" placeholder="Digite a sua altura em metros">
+            <input type="number" name="idade" id="idade" placeholder="Digite a sua idade em anos">
+            <div class="botoes0">
+                <label for="masculino" class="sexo">Masculino</label>
+                <input type="checkbox" name="sexo" id="masculino" value="true">
+                <label for="feminino" class="sexo">Feminino</label>
+                <input type="checkbox" name="sexo" id="feminino" value="true">
+            </div>
+            <div class="botoes">
+                <button type="reset" class="calcular">Limpar formulário</button>
+                <button type="button" onclick="calcular()" class="calcular">Calcular</button>
+            </div>
+        </form>
+    </div>
+
+    <p id="resultado"></p>
+
+    <form action="http://google.com/search" method="get" target="_blank">
+        <input type="search" name="q" id="busca" placeholder="Digite sua pesquisa" maxlength="255" lang="pt-BR">
+        <input type="submit" value="Pesquisar">
+    </form>
+
+
+</body>
+
+</html>

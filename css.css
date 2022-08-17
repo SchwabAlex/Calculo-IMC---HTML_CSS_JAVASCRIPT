@@ -1,0 +1,138 @@
+body {
+    font-size: 62.5%;
+    background-color: rgb(37, 35, 32);
+    margin: 0px;
+    padding: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.titulo{
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(183, 117, 245);
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color:  rgb(183, 117, 245);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 30px;
+    
+}
+
+li {
+    font-size: 1.2rem;
+    font-family: sans-serif;   
+    /*background-color: yellowgreen; */    
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.8;
+    border-bottom: 0.25rem solid;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    border-color: rgb(230, 208, 208);
+    cursor: pointer;
+    color: thistle;
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 18%;
+    }
+    h1 {
+        text-align: center;
+    }
+    ul{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+    a {
+        border: none;
+    }
+    .navegacao {
+        margin-top: 1rem;
+    }
+    li {
+        background-color: transparent;
+        padding: 0.2rem;
+    }
+}
+
+.entrada{
+    /*border: 1px solid white;*/
+    padding-left: 450px;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 10px;
+    /*margin-left: 30px;*/
+    justify-content: center;
+    width: 425px;
+}
+input {
+    background-color: transparent;
+    border: none;
+    margin: 3px;
+    border-bottom: orangered 1px solid;
+    text-align: center;
+    color: wheat;
+}
+
+.calcular {
+    border: wheat;
+    background-color: tomato;
+    font-size: 1.2rem;
+    width: 150px;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    color: wheat;
+}
+
+#resultado {
+    color: wheat;
+}
+
+.botoes0{
+display: flex;
+justify-content:center;
+padding: 20px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    font-size: 1rem;
+    text-align: center;
+}
